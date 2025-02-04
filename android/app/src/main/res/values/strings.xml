@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">tarea3amadi</string>
+    <string name="title_activity_main">tarea3amadi</string>
+    <string name="package_name">ionic.tarea3amadi</string>
+    <string name="custom_url_scheme">ionic.tarea3amadi</string>
+</resources>
