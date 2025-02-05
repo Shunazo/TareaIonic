@@ -13,11 +13,11 @@ import { documentsSharp, documentsOutline, languageSharp , languageOutline, addS
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Pagina Inicial', url: '/folder/Pagina Inicial', icon: 'home' },
-    { title: 'Sumadora', url: '/folder/Sumadora', icon: 'add' },
-    { title: 'Traductor', url: '/folder/Traductor', icon: 'language' },
-    { title: 'Tabla de Multiplicar', url: '/folder/Tabla de Multiplicar', icon: 'documents' },
-    { title: 'Experiencia Personal', url: '/folder/Experiencia Personal', icon: 'accessibility' },
+    { title: 'Pagina Inicial', url: '/inicio/', icon: 'home' },
+    { title: 'Sumadora', url: '/suma', icon: 'add' },
+    { title: 'Traductor', url: '/traductor', icon: 'language' },
+    { title: 'Tabla de Multiplicar', url: '/tabla', icon: 'documents' },
+    { title: 'Experiencia Personal', url: '/experiencia', icon: 'accessibility' },
   ];
   
   constructor() {
