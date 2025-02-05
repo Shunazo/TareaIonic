@@ -18,11 +18,12 @@
           <ion-input [(ngModel)]="numero" type="number" placeholder="Ingrese un número"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-button (click)="traducirNumero()">Traducir</ion-button>
+          <ion-label>Traduccion: {{ resultado }}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>{{ resultado }}</ion-label>
+          <ion-button (click)="traducirNumero()">Traducir</ion-button>
         </ion-item>
+        
         
       </ion-list>
 

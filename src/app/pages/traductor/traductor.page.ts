@@ -17,7 +17,7 @@ export class TraductorPage {
   traduccion(number: number): string {
     const ones = ["", "Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis", "Siete", "Ocho", "Nueve", "Diez", "Once", "Doce", "Trece", "Catorce", "Quince", "Dieciséis", "Diecisiete", "Dieciocho", "Diecinueve"];
     const tens = ["", "", "Veinte", "Treinta", "Cuarenta", "Cincuenta", "Sesenta", "Setenta", "Ochenta", "Noventa"];
-    const hundreds = ["", "Cien", "Doscientos", "Trescientos", "Cuatrocientos", "Quinientos", "Seiscientos", "Setecientos", "Ochocientos", "Novecientos"];
+    const hundreds = ["", "Ciento", "Doscientos", "Trescientos", "Cuatrocientos", "Quinientos", "Seiscientos", "Setecientos", "Ochocientos", "Novecientos"];
     
     if (number === 100) return "Cien";
     if (number === 1000) return "Mil";
@@ -25,7 +25,7 @@ export class TraductorPage {
     if (number < 100) return number % 10 === 0 ? tens[number / 10] : `${tens[Math.floor(number / 10)]} y ${ones[number % 10]}`;
     if (number < 1000) return number % 100 === 0 ? hundreds[number / 100] : `${hundreds[Math.floor(number / 100)]} ${this.traduccion(number % 100)}`;
     
-    return "Número fuera de rango";
+    return "Numero fuera de rango";
   }
 
   traducirNumero() {
