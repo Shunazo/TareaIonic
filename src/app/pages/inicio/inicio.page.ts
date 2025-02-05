@@ -11,11 +11,9 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule,IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonCard]
 })
-export class InicioPage implements OnInit {
+export class InicioPage {
+  // variabe bre
+  
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  //Metodo ahi
 }

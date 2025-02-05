@@ -1,13 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>traductor</ion-title>
+    <ion-title>Traductor</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">traductor</ion-title>
+      <ion-title size="large">Traductor</ion-title>
     </ion-toolbar>
   </ion-header>
+
+    <ion-card>
+     
+      <ion-list>
+        <ion-item>
+          <ion-input [(ngModel)]="numero" type="number" placeholder="Ingrese un número"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-button (click)="traducirNumero()">Traducir</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-label>{{ resultado }}</ion-label>
+        </ion-item>
+        
+      </ion-list>
+
+    </ion-card>
+
 </ion-content>
